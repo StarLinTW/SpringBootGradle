@@ -9,7 +9,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "UserRequests")
+@Table(name = "game_requests")
 public class GameRequest {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -64,6 +64,11 @@ public class GameRequest {
 	}
 	public void setPayload(Payload payload) {
 		this.payload = payload;
+	}
+	@Override
+	public String toString() {
+		return "GameRequest [id=" + id + ", clienttype=" + clienttype + ", lang=" + lang + ", currency=" + currency
+				+ ", mode=" + mode + ", token=" + token + ", payload=" + payload + "]";
 	}
 }
     

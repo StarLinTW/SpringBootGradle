@@ -33,4 +33,8 @@ public class Payload {
 	public void setPID(String pID) {
 		PID = pID;
 	}
+	@Override
+	public String toString() {
+		return "Payload [id=" + id + ", GN=" + GN + ", PID=" + PID + "]";
+	}
 }
