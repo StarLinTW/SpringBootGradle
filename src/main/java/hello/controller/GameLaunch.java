@@ -52,7 +52,7 @@ public class GameLaunch {
     	gameReponse.setFID("1");
     	gameReponse.setLB("10000000");
     	gameReponse.setMSGID("BET");
-    	gameReponse.setMUL("3");
+    	gameReponse.setMUL("3   ");
     	gameReponse.setRS("6|8|19|8|0|");    	
     	return gameReponse;
     }
